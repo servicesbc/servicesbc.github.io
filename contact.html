@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BCTab.com</title>
+    <meta name="description" content="Contact us at BCTab.com for any inquiries or feedback. Fill out the form and we'll get back to you as soon as possible.">
+    <meta name="keywords" content="contact, contact us, email, form, BCTab, BCTab.com">
+    <meta name="author" content="BCTab">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bctab.com/contact">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        header, footer {
+            padding: 20px;
+        }
+        .site-title img {
+            width: 200px;
+            height: 200px;
+            margin-right: 10px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #444;
+            color: #fff;
+        }
+        textarea {
+            height: 150px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        nav a {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+    </style>
+    <link rel="icon" href="icon-bctab.png">
+</head>
+<body>
+    <header class="container py-3">
+        <div class="site-title">
+            <a href="#"><img src="icon-bctab.png" alt="Site Icon" class="img-fluid"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="contactForm" method="post" action="mailto:contact@bctab.com" enctype="text/plain">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <select name="extension_type" required>
+                <option value="">Select an extension</option>
+                <option value="bartender">Bartender Tab</option>
+                <option value="chef">Chef Tab</option>
+            </select>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <footer class="mt-5 py-3">
+        <div class="container">
+            <nav class="nav justify-content-center mb-3">
+                <a class="nav-link" href="index">Home</a>
+                <a class="nav-link" href="privacy">Privacy</a>
+                <a class="nav-link" href="terms">Terms of Service</a>
+                <a class="nav-link" href="contact">Contact</a>
+            </nav>
+            <a href="https://twitter.com" target="_blank" class="twitter-icon"><img src="icon-x.png" alt="Twitter Icon"></a>
+            <p class="mb-0">&copy; 2024 BCTab.com All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
