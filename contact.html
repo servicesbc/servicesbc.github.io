@@ -10,89 +10,112 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://bctab.com/contact">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="https://bctab.com/favicon.ico">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLDSGNK138"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PLDSGNK138');
+    </script>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #fff;
-            background-color: #333;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-        }
-        header, footer {
-            padding: 20px;
-        }
-        .site-title img {
-            width: 200px;
-            height: 200px;
-            margin-right: 10px;
-        }
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #222;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        input[type="text"], input[type="email"], textarea, select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            background-color: #444;
-            color: #fff;
-        }
-        textarea {
-            height: 150px;
-        }
-        input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: 20px;
-        }
-        nav a {
-            color: #fff;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            margin: 0 10px;
-            padding: 10px 20px;
-            border: 2px solid #fff;
-            border-radius: 5px;
-            transition: background-color 0.3s, border-color 0.3s;
-        }
-        nav a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #fff;
-        }
-        .corner-icons {
-            position: absolute;
-            top: 25px;
-            right: 20px;
-        }
-        .corner-icons img {
-            width: 120px;
-            height: 120px;
-            margin-right: 10px;
-        }
+       body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    padding: 20px;
+}
+
+.site-title {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.site-title img {
+    width: 200px; 
+    height: 200px; 
+    margin-right: 10px;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.contact-button svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.corner-icons {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.corner-icons img {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+
     </style>
     <link rel="icon" href="icon-bctab.png">
 </head>
@@ -108,32 +131,28 @@
     </header>
 
     <div class="container">
-        <form id="contactForm" method="post" action="mailto:contact@bctab.com" enctype="text/plain">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <select name="extension_type" required>
-                <option value="">Select an extension</option>
-                <option value="bartender">Bartender Tab</option>
-                <option value="chef">Chef Tab</option>
-            </select>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message">
-        </form>
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p>If you have any inquiries or feedback, please feel free to contact us:</p>
+        <a href="mailto:contact@bctab.com?subject=Inquiry%20-%20Bartender%20Tab" class="contact-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2H2v20l9-9 9 9V2z"/></svg>
+            Contact us for Bartender Tab
+        </a>
+        <br>
+        <a href="mailto:contact@bctab.com?subject=Inquiry%20-%20Chef%20Tab" class="contact-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2H2v20l9-9 9 9V2z"/></svg>
+            Contact us for Chef Tab
+        </a>
     </div>
 
     <footer class="mt-5 py-3">
-        <div class="container">
-            <nav class="nav justify-content-center mb-3">
-                <a class="nav-link" href="https://bctab.com">Home</a>
-                <a class="nav-link" href="https://bctab.com/privacy">Privacy</a>
-                <a class="nav-link" href="https://bctab.com/terms">Terms of Service</a>
-                <a class="nav-link" href="https://bctab.com/contact">Contact</a>
-            </nav>
-            <a href="https://twitter.com/bctabcom" target="_blank" class="twitter-icon"><img src="icon-x.png" alt="Twitter Icon"></a>
-            <p class="mb-0">&copy; 2024 BCTab.com</p>
-        </div>
+        <nav class="nav justify-content-center mb-3">
+            <a class="nav-link" href="https://bctab.com">Home</a>
+            <a class="nav-link" href="https://bctab.com/privacy">Privacy</a>
+            <a class="nav-link" href="https://bctab.com/terms">Terms of Service</a>
+            <a class="nav-link" href="https://bctab.com/contact">Contact</a>
+        </nav>
+        <a href="https://twitter.com/bctabcom" target="_blank" class="twitter-icon"><img src="icon-x.png" alt="Twitter Icon"></a>
+        <p class="mb-0">&copy; 2024 BCTab.com</p>
     </footer>
 </body>
 </html>
-
